@@ -11,7 +11,7 @@ const app = express();
 app.use(express.json());
 app.use(express.urlencoded({extended: true}));
 
-mongoose.connect(process.env.MONGODB_URL ||  'mongodb+srv://amazona:amazona@cluster0.nb7oz.mongodb.net/amazona/table', {
+mongoose.connect(process.env.MONGODB_URL ||  'mongodb+srv://amazona:amazona@cluster0.nb7oz.mongodb.net/amazona', {
     useNewUrlParser: true,
     useUnifiedTopology: true,
     useCreateIndex: true,
